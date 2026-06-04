@@ -187,22 +187,25 @@
         align-items:center;
     }
 
-    .best-sellers__filter{
+    .best-sellers__sortings{
         display:flex;
         flex-direction:row;
         align-items:center;
         gap:.6rem;
     }
 
-    .best-sellers__filter-title{
+    .best-sellers__sortings-title,
+    .product-sortings__title{
         display:flex;
     }
 
-    .best-sellers__filter-lists{
+    .best-sellers__sortings-lists,
+    .product-sortings__lists{
         width:fit-content;
     }
 
-    .best-sellers__filter-list-btn{
+    .best-sellers__sortings-list-btn,
+    .product-sortings__list-btn{
         padding-right:.7em;
     }
 

@@ -248,10 +248,11 @@
 .hero-section__season-tag-volume,
 .hero-section__intent-label,
 .best-sellers__pieces-num,
-.best-sellers__filter-title,
+.best-sellers__sortings-title,
 .product-card__seasonal-tag,
 .promotional-section__archive-text,
-.footer-section__est-info{
+.footer-section__est-info,
+.product-sortings__title{
   text-transform:uppercase;
   position:relative;
   margin:0;
@@ -411,13 +412,15 @@
   background-color:rgb(244, 244, 245);
 }
 
-.best-sellers__selected-text{
+.best-sellers__selected-text,
+.product-sortings__selected-text{
   color:rgb(24, 24, 27);
   font-size:0.875rem;
   font-weight:500;
 }
 
-.best-sellers__label{
+.best-sellers__label,
+.product-sortings__label{
   border:none;
   background:inherit;
   cursor:pointer;
@@ -429,7 +432,8 @@
   border-top:1px solid rgba(0, 0, 0, 0.1);
 }
 
-.best-sellers__filter-list-btn{
+.best-sellers__sortings-list-btn,
+.product-sortings__list-btn{
   background:none;
   border:none;
   transition:transform 0.2s ease;
@@ -438,7 +442,8 @@
   cursor:pointer;
 }
 
-.best-sellers__filter-list-btn.active{
+.best-sellers__sortings-list-btn.active,
+.product-sortings__list-btn.active{
   background-color:rgb(160, 25, 55);
   color:#fff;
 }
