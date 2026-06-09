@@ -628,3 +628,55 @@
   font-size:0.8rem;
   color:#9ca3af;
 }
+
+.shop-filters__text{
+  font-size:1.13rem;
+  font-weight:600;
+  letter-spacing:0.02em;
+}
+
+.shop-filters__close-btn{
+  border:none;
+  background:inherit;
+}
+
+.shop-filters__section-title{
+  font-size:1rem;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+}
+
+.cb__rect{
+  fill:#F5F7FB;          
+  stroke:#c9d2e0;     
+  stroke-width:1.5;
+}
+
+.cb__check{
+  fill:none;
+  stroke:transparent;  
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.shop-filters__input:checked + .cb__svg .cb__rect{
+  fill:rgb(28, 28, 30);     
+  stroke:rgb(28, 28, 30);
+}
+
+.shop-filters__input:checked + .cb__svg .cb__check{
+  stroke:#ffffff;
+}
+
+.shop-products__filter-btn{
+  cursor:pointer;
+}
+
+.shop-products__filter-text{
+  font-size:0.8rem;
+  font-weight:500;
+  line-height:1;
+  letter-spacing:0.02em;
+  color:rgb(24, 24, 27);
+}

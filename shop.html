@@ -215,89 +215,117 @@
         </div>
     </div>
 
-
-    <h1 class="shop-title">SHOP</h1>
-
     <div class="shop-dflex">
-        <aside class="shop-filters">
-            <h2 class="shop-filters__text">Filters</h2>
+        <aside class="shop-filters js-shop-filter">
+            <div class="shop-filters__header">
+                <h2 class="shop-filters__text">Filters</h2>
+                <button class="shop-filters__close-btn js-filter-panel-close" type="button" aria-label="close filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="20px" viewBox="0 -960 960 960" width="20px" cursor="pointer" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </button>
+            </div>
 
-            <section id="shop-filters__category-section">
-                <h3 class="shop-filters__category-text">Category</h3>
-                <label class="shop-filters__category-label">
-                    <input class="shop-filters__category-input" type="checkbox" value="All Pieces">
-                    <span class="shop-filters__category">All Pieces</span>
-                </label>
+            <section class="shop-filters__section">
+                <h3 class="shop-filters__section-title">Category</h3>
+                <div class="shop-filters__options">
+                    <label class="shop-filters__category-label">
+                        <input class="shop-filters__input" type="checkbox" value="All Pieces" name="category">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__category">All Pieces</span>
+                    </label>
 
-                <label class="shop-filters__category-label">
-                    <input class="shop-filters__category-input" type="checkbox" value="Men">
-                    <span class="shop-filters__category">Men</span>
-                </label>
+                    <label class="shop-filters__category-label">
+                        <input class="shop-filters__input" type="checkbox" value="Men" name="category">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__category">Men</span>
+                    </label>
 
-                <label class="shop-filters__category-label">
-                    <input class="shop-filters__category-input" type="checkbox" value="Women">
-                    <span class="shop-filters__category">Women</span>
-                </label>
+                    <label class="shop-filters__category-label">
+                        <input class="shop-filters__input" type="checkbox" value="Women" name="category">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__category">Women</span>
+                    </label>
 
-                <label class="shop-filters__category-label">
-                    <input class="shop-filters__category-input" type="checkbox" value="Accessories">
-                    <span class="shop-filters__category">Accessories</span>
-                </label>
+                    <label class="shop-filters__category-label">
+                        <input class="shop-filters__input" type="checkbox" value="Accessories" name="category">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__category">Accessories</span>
+                    </label>
+                </div>
             </section>
 
-            <section class="shop-filters__price-section">
-                <h3 class="shop-filters__price-text">Price</h3>
-                <label class="shop-filters__price-label">
-                    <input class="shop-filters__price-input" type="checkbox" value="Under $50">
-                    <span class="shop-filters__price-range">Under $50</span>
-                </label>
+            <section class="shop-filters__section">
+                <h3 class="shop-filters__section-title">Price</h3>
+                <div class="shop-filters__options">
+                    <label class="shop-filters__price-label">
+                        <input class="shop-filters__input" type="checkbox" value="Under $50" name="priceRange">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__price-range">Under $50</span>
+                    </label>
 
-                <label class="shop-filters__price-label">
-                    <input class="shop-filters__price-input" type="checkbox" value="$50 - $100">
-                    <span class="shop-filters__price-range">$50 - $100</span>
-                </label>
+                    <label class="shop-filters__price-label">
+                        <input class="shop-filters__input" type="checkbox" value="$50 - $100" name="priceRange">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__price-range">$50 - $100</span>
+                    </label>
 
-                <label class="shop-filters__price-label">
-                    <input class="shop-filters__price-input" type="checkbox" value="$100 - $200">
-                    <span class="shop-filters__price-range">$100 - $200</span>
-                </label>
+                    <label class="shop-filters__price-label">
+                        <input class="shop-filters__input" type="checkbox" value="$100 - $200" name="priceRange">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__price-range">$100 - $200</span>
+                    </label>
 
-                <label class="shop-filters__price-label">
-                    <input class="shop-filters__price-input" type="checkbox" value="Over $200">
-                    <span class="shop-filters__price-range">Over $200</span>
-                </label>
+                    <label class="shop-filters__price-label">
+                        <input class="shop-filters__input" type="checkbox" value="Over $200" name="priceRange">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__price-range">Over $200</span>
+                    </label>
+                </div>
             </section>
             
-            <section class="shop-filters__size-section">
-                <h3 class="shop-filters__size-text">Size</h3>
-                <label class="shop-filters__size-label">
-                    <input class="shop-filters__size-input" type="checkbox" value="Xs">
-                    <span class="shop-filters__size">Xs</span>
-                </label>
+            <section class="shop-filters__section">
+                <h3 class="shop-filters__section-title">Size</h3>
+                <div class="shop-filters__options">
+                    <label class="shop-filters__size-label">
+                        <input class="shop-filters__input" type="checkbox" value="Xs" name="size">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__size">Xs</span>
+                    </label>
 
-                <label class="shop-filters__size-label">
-                    <input class="shop-filters__size-input" type="checkbox" value="S">
-                    <span class="shop-filters__size">S</span>
-                </label>
+                    <label class="shop-filters__size-label">
+                        <input class="shop-filters__input" type="checkbox" value="S" name="size">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__size">S</span>
+                    </label>
 
-                <label class="shop-filters__size-label">
-                    <input class="shop-filters__size-input" type="checkbox" value="M">
-                    <span class="shop-filters__size">M</span>
-                </label>
+                    <label class="shop-filters__size-label">
+                        <input class="shop-filters__input" type="checkbox" value="M" name="size">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__size">M</span>
+                    </label>
 
-                <label class="shop-filters__size-label">
-                    <input class="shop-filters__size-input" type="checkbox" value="L">
-                    <span class="shop-filters__size">L</span>
-                </label>
+                    <label class="shop-filters__size-label">
+                        <input class="shop-filters__input" type="checkbox" value="L" name="size">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__size">L</span>
+                    </label>
 
-                <label class="shop-filters__size-label">
-                    <input class="shop-filters__size-input" type="checkbox" value="XL">
-                    <span class="shop-filters__size">XL</span>
-                </label>
+                    <label class="shop-filters__size-label">
+                        <input class="shop-filters__input" type="checkbox" value="XL" name="size">
+                        <svg class="cb__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><rect class="cb__rect" x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"></rect><path class="cb__check" d="M7 12.5L10 15.5L17 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="shop-filters__size">XL</span>
+                    </label>
+                </div>
             </section>
         </aside>
 
         <main class="shop-products">
+            <div class="shop-products__row-dflex">
+                <h1 class="shop-title">SHOP</h1>
+                <button class="shop-products__filter-btn js-filter-btn">
+                    <span class="shop-products__filter-text">Filter</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4-2v-4L3 5z"/></svg>
+                </button>
+            </div>
             <div class="product-sortings">
                 <span class="product-sortings__title">SORT BY:</span>
                 <div class="product-sortings__wrapper">

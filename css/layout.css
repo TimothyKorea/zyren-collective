@@ -26,7 +26,8 @@ body.menu-open{
 .header-section__cart-link,
 .header-section__secondary-nav,
 .hero-section__primary-cta,
-.categories__link{
+.categories__link,
+.shop-products__filter-btn{
     display:flex;
     align-items:center;
     gap:0.5rem;
@@ -171,11 +172,13 @@ body.menu-open{
 }
 
 .search-overlay__image-wrapper,
-.best-sellers__sortings-title{
+.best-sellers__sortings-title,
+.product-sortings__title{
     display:none;
 }
 
-.hero-section{
+.hero-section,
+.shop-dflex{
     position:relative;
     padding:110px 1.2em 0 1.2em;
     z-index:2;
@@ -629,4 +632,100 @@ body.menu-open{
     display:flex;
     align-items:center;
     gap:1.8rem;
+}
+
+.shop-dflex{
+    padding-bottom:5em;
+}
+
+.shop-filters.is-active{
+    transform:translateX(0);
+    z-index:1000;
+} 
+
+.shop-filters{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    position:fixed;
+    top:90px;
+    left:0;
+    height:calc(100dvh - 90px);
+    width:60vw;
+    max-width:300px;
+    overflow-y: auto;
+    background-color:#fff;
+    padding:1.2em 1.2em;
+    transform:translateX(-100%);
+    transition:transform 0.3s ease;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.05),
+    0 12px 24px rgba(0, 0, 0, 0.10);
+}
+
+.shop-filters__text{
+    margin:0;
+}
+
+.shop-filters__header,
+.shop-products__row-dflex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.shop-filters__section-title,
+.shop-filters__options{
+    margin:0;
+}
+
+.shop-filters__section,
+.shop-filters__options{
+    margin-top:0.875rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+}
+
+.shop-filters__options{
+    gap:0.625rem;
+}
+
+.shop-filters__category-label,
+.shop-filters__price-label,
+.shop-filters__size-label{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.shop-filters__input{
+    position:absolute;
+    width:1px;
+    height:1px;
+    opacity:0;
+}
+
+.cb__svg{
+    width:24px;
+    height:24px;
+    display:block;
+}
+
+.shop-title{
+    margin:0;
+}
+
+.shop-products__row-dflex{
+    margin-bottom:1.75em;
+}
+
+.shop-products__filter-btn{
+    background-color:transparent;
+    border:1px solid rgb(24, 24, 27);
+    padding:.75em 1em;
+    border-radius:12px;
+}
+
+.product-sortings__wrapper{
+    margin-bottom:40px;
 }

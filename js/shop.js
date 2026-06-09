@@ -1,6 +1,7 @@
 import {products} from './data.js';
 import { renderProducts } from './renderproduct.js';
 
+
 const container = document.querySelector('.shop-products__grid')
 renderProducts(products, container);
 
@@ -72,6 +73,18 @@ productSortingsBtn.forEach(btn => {
     })
 })
 
+const filterBtn = document.querySelector('.js-filter-btn');
+const filters = document.querySelector('.js-shop-filter');
+const filterPanelClose = document.querySelector('.js-filter-panel-close');
+
+filterBtn.addEventListener('click', () => {
+    filters.classList.add('is-active');
+    
+})
+
+filterPanelClose.addEventListener('click', () => {
+    filters.classList.remove('is-active');
+})
 
 
 
