@@ -729,3 +729,121 @@ body.menu-open{
 .product-sortings__wrapper{
     margin-bottom:40px;
 }
+
+.about__hero-section,
+.about__story,
+.about__decision,
+.about__founder-section,
+.about__belief{
+    position:relative;
+    padding:0 1.2em;
+    z-index:2;
+}
+
+.about-container{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.about__hero-section{
+    padding:8.9em 1.2em 2em 1.2em;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom:1rem;
+}
+
+.about__hero-text,
+.about__section-title,
+.about__subtitle{
+    margin:0;
+}
+
+.about__story-intro,
+.about__decision-intro,
+.about__story-content,
+.about__founder-section{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.about__story-content{
+    gap:1.5rem;
+}
+
+.about__story-img-wrapper,
+.about__decision-img-wrapper{
+    margin-top:2em;
+    width:100%;
+    aspect-ratio:4 / 5;
+}
+
+.about__story-img,
+.about__decision-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about__subtitle{
+    margin-bottom:0.75em;
+}
+
+.about__section-title{
+    margin-bottom:0em;
+}
+
+.about__belief{
+    padding-top:4em;
+    padding-bottom:4em;
+}
+
+.belief-mb{
+    margin-bottom:1.7em;
+}
+
+.about__belief-card + .about__belief-card{
+    margin-top:2.9em;
+}
+
+.about__belief-card{
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+    padding-top:2.5em;
+}
+
+.about__founder-section{
+    margin-bottom:5.5em;
+}
+
+.about__founder-img-wrapper{
+    width:100%;
+    aspect-ratio:4/5;
+}
+
+.about__founder-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about__founder-title{
+    margin-bottom:2rem;
+}
+
+.about__story-text,
+.about__decision-text,
+.about__belief-text,
+.about__founder-text{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.about__founder-signature{
+    margin-bottom:.32em;
+}
+
+.about__founder-text{
+    margin-bottom:1.2em;
+}

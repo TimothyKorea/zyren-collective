@@ -680,3 +680,57 @@
   letter-spacing:0.02em;
   color:rgb(24, 24, 27);
 }
+
+.about__hero-text{
+  font-size:2.55rem;
+  line-height:1.1;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  text-align:center;
+}
+
+.about__accent{
+  color:rgb(160, 25, 55);
+}
+
+.about__section-title{
+  font-size:2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.about__subtitle{
+  font-size:1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.about__story-text,
+.about__decision-text,
+.about__belief-text,
+.about__founder-text{
+  font-size: 1rem;      
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0;
+  max-width:65ch;
+}
+
+.about__belief{
+  background-color:rgb(244, 244, 245);
+}
+
+.about__founder-signature{
+  display:block;
+  font-family: "Allura", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height:1;
+}
+
+.about__founder-closing{
+  font-size:0.75rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
