@@ -297,7 +297,8 @@
 }
 
 .hero-section__primary-cta,
-.hero-section__secondary-cta{
+.hero-section__secondary-cta,
+.wishlist__shop-btn{
   width:fit-content;
   font-size:0.75rem;
   letter-spacing:0.2em;
@@ -363,7 +364,8 @@
 .best-sellers__title,
 .editorial-section__title,
 .promotional-section__title,
-.testimonials-section__title{
+.testimonials-section__title,
+.wishlist__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -751,4 +753,34 @@
   font-size:1rem;
   max-width:38ch;
   line-height:1.5;
+}
+
+.wishlist{
+  background-color:rgb(244, 244, 245);
+}
+
+.wishlist__item-count{
+  font-family:"JetBrains Mono", monospace;
+  text-transform:uppercase;
+  font-size:0.75rem;
+  color:rgb(156, 163, 175);
+}
+
+.wishlist__empty-state-heading{
+  font-size:1.75rem;
+  font-weight:500;
+  line-height:1.1;
+  letter-spacing:-0.03em;
+  text-align:center;
+}
+
+.wishlist__supporting-text{
+  font-size:0.93rem;
+  line-height:1.5;
+  text-align:center;
+}
+
+.wishlist__shop-btn{
+  padding: 0.9em 1.75em;
+  margin-top:.35em;
 }
