@@ -523,6 +523,88 @@
     .about__belief-card + .about__belief-card{
         margin-top:0;
     }
+
+    .lookbook__subtitle{
+        font-size:2.5rem;
+        flex:0 0 auto;
+    }
+
+    .lookbook__intro-text{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        gap:none;
+    }
+
+    .lookbook__text{
+        flex:0 0 350px;
+    }
+
+    .lookbook__img-wrapper{
+        width:100%;
+        aspect-ratio:4/2;
+    }
+
+    .lookbook__img-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        margin-bottom:2.5rem;
+    }
+
+    .lookbook__img--wide-bottom{
+        margin:0;
+        display:inline-block;
+        flex:0 0 320px;
+    }
+
+    .lookbook__img-grid--bottom{
+        display:flex;
+        flex-direction:row;
+    }
+
+    .lookbook__img-row{
+        display:flex;
+        gap:1rem;
+    }
+
+    .lookbook__content{
+        display:block;
+        margin-bottom:1em;
+    }
+
+    .lookbook__content-title{
+        margin:0px;
+        font-size:2rem;
+        font-weight:400;
+        margin-bottom:.5em;
+    }
+
+    .lookbook__shop-link-container{
+        display:flex;
+        align-items:center;
+        gap:.12rem;
+        position:relative;
+    }
+
+    .lookbook__shop-link-container::after{
+        content:"";
+        position:absolute;
+        width:0;
+        height:1px;
+        bottom:-5px;
+        left:0;
+        background:#A8A9AD;
+        transition:width 0.2s ease;
+        transform-origin:left;
+    }
+
+    .lookbook__shop-link-container:hover::after{
+        width:11.9%;
+    }
+
+    .lookbook__shop-link{
+        font-size:.75rem;
+    }
 }
 
 @media(min-width:1024px){
