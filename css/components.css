@@ -365,7 +365,8 @@
 .editorial-section__title,
 .promotional-section__title,
 .testimonials-section__title,
-.wishlist__title{
+.wishlist__title,
+.faq__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -755,7 +756,8 @@
   line-height:1.5;
 }
 
-.wishlist{
+.wishlist,
+.faq{
   background-color:rgb(244, 244, 245);
 }
 
@@ -780,7 +782,58 @@
   text-align:center;
 }
 
-.wishlist__shop-btn{
-  padding: 0.9em 1.75em;
-  margin-top:.35em;
+.faq__btn{
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border:none;
+  color:rgba(24, 24, 27, 0.7);
+  background:none;
+}
+
+.faq__accordion-item{
+  border-top:1px solid rgba(0, 0, 0, 0.1);
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+  padding-top:1.38em;
+  padding-bottom:1.38em;
+}
+
+.faq__clickable-header{
+  display:flex;
+  align-items:center;
+  gap:0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  list-style:none;
+  border:none;
+  background:none;
+  text-align:start;
+}
+
+.faq__clickable-header::-webkit-details-marker{
+  display:none;
+}
+
+.faq__clickable-header::before{
+  content:"+";
+  font-size:1.25rem;
+  font-weight:300;
+  color:rgba(24, 24, 27, 0.4);
+}
+
+.faq__accordion-item[open] .faq__clickable-header::before{
+  content:"-";
+  font-size:1.25rem;
+  font-weight:300;
+  color:rgb(160, 25, 55);
+}
+
+.faq__content{
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
 }

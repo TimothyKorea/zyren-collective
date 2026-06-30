@@ -293,7 +293,8 @@ body.menu-open{
 .footer-section,
 .lookbook__header,
 .lookbook__content-media,
-.wishlist{
+.wishlist,
+.faq{
     max-width:1280px;
     margin:0 auto;
     padding:5em 1.2em;
@@ -884,7 +885,9 @@ body.menu-open{
 }
 
 .lookbook__img-wrapper,
-.wishlist__header{
+.wishlist__header,
+.faq__header,
+.faq__summary{
     display:flex;
     flex-direction:column;
     gap:1rem;
@@ -928,8 +931,40 @@ body.menu-open{
     object-fit:contain;
 }
 
+.wishlist__shop-btn{
+    padding: 0.9em 1.75em;
+    margin-top:.35em;
+}
+
 .wishlist__shop-btn-wrapper{
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.faq{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+    border:none;
+    width:100%;
+    padding-bottom:4em;
+}
+
+.faq__header{
+    margin-top:4em;
+    gap:1.8rem;
+}
+
+.faq__summary{
+    gap:.7rem;
+}
+
+.faq__btn,
+.faq__clickable-header{
+    padding:0;
+}
+
+.faq__content{
+    margin-bottom:0;
 }
