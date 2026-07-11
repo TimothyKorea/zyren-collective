@@ -952,6 +952,7 @@ body.menu-open{
 }
 
 .faq__header{
+    display:flex;
     margin-top:4em;
     gap:1.8rem;
 }
@@ -967,4 +968,8 @@ body.menu-open{
 
 .faq__content{
     margin-bottom:0;
+    margin-left:1.5em;
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease;
 }

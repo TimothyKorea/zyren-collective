@@ -75,6 +75,29 @@
     .footer-section__social-link:hover{
         transform:scale(1.1);
     }
+
+    .faq__btn{
+        cursor:pointer;
+        position:relative;
+    }
+
+    .faq__btn:hover::after{
+        content:"";
+        width:100%;
+        height:0.5px;
+        background-color:rgb(160, 25, 55);
+        position:absolute;
+        bottom:-3px;
+        left:0px;
+    }
+
+    .faq__btn:hover{
+        color:rgb(160, 25, 55);
+    }
+
+    .faq__clickable-header{
+        cursor:pointer;
+    }
 }
 
 @media(min-width:638px){
@@ -168,7 +191,8 @@
     .editorial-section__title,
     .promotional-section__title,
     .testimonials-section__title,
-    .wishlist__title{
+    .wishlist__title,
+    .faq__title{
         font-size: 2.8rem;
     }
 
@@ -645,7 +669,8 @@
     .editorial-section__title,
     .promotional-section__title,
     .testimonials-section__title,
-    .wishlist__title{
+    .wishlist__title,
+    .faq__title{
         font-size: 4rem;
     }
 
@@ -711,5 +736,33 @@
 
     .footer-section__content{
         flex:1 1 500px;
+    }
+
+    .faq{
+        display:flex;
+        flex-direction:row;
+        gap:8rem;
+    }
+
+    .faq__header{
+        margin-top:6em;
+    }
+
+    .faq__accordion{
+        margin-top:6em;
+        width:100%;
+    }
+
+    .faq__clickable-header{
+        font-size:1.18rem;
+    }
+
+    .faq__content{
+        font-size:1rem;
+    }
+
+    .faq__clickable-header::before, 
+    .faq__accordion-item[aria-expanded="true"] .faq__clickable-header::before{
+        font-size:1.45rem;
     }
 }
