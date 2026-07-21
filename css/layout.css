@@ -294,7 +294,8 @@ body.menu-open{
 .lookbook__header,
 .lookbook__content-media,
 .wishlist,
-.faq{
+.faq,
+.contact{
     max-width:1280px;
     margin:0 auto;
     padding:5em 1.2em;
@@ -474,7 +475,8 @@ body.menu-open{
     gap:3rem;
 }
 
-.editorial-section__brand-stats{
+.editorial-section__brand-stats,
+.contact__header{
     display:flex;
     flex-direction:column;
     gap:1.3rem;
@@ -887,7 +889,8 @@ body.menu-open{
 .lookbook__img-wrapper,
 .wishlist__header,
 .faq__header,
-.faq__summary{
+.faq__summary,
+.contact{
     display:flex;
     flex-direction:column;
     gap:1rem;
@@ -936,7 +939,8 @@ body.menu-open{
     margin-top:.35em;
 }
 
-.wishlist__shop-btn-wrapper{
+.wishlist__shop-btn-wrapper,
+.contact__btn-wrapper{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -972,4 +976,62 @@ body.menu-open{
     height:0;
     overflow:hidden;
     transition:height .35s ease;
+}
+
+.contact{
+    padding-top:7.5em;
+    gap:3rem;
+}
+
+.contact__title,
+.contact__text,
+.contact__form-title{
+    margin:0px;
+}
+
+.contact__form-wrapper{
+    position:relative;
+}
+
+.contact__form{
+    padding: 1rem 1.25rem;
+}
+
+.contact__form-title{
+    position:absolute;
+    padding:.1em .4em;
+    top:-15.7px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.contact__field:first-child{
+    margin-top:1.5em;
+}
+
+.contact__field{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    margin-bottom:1.5rem;
+}
+
+#user-first-name,
+#user-last-name,
+#user-email,
+#user-message{
+    padding: .89rem 1.25rem;
+    border:1px solid #D4D4D8;
+    transition:border-color 0.2s ease;
+    font-size:1rem;
+    font-family:"DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    caret-color: #000;
+    resize:none;
+}
+
+:is(#user-first-name, #user-last-name, #user-email, #user-message):focus{
+    border-color: rgb(24, 24, 27);
 }

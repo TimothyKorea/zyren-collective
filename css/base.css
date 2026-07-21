@@ -42,7 +42,10 @@ a{
     font-family:"JetBrains Mono", monospace;
 }
 
-input{
+input,
+textarea {
+    appearance: none;
+    -webkit-appearance: none;
     outline:none;
 }
 

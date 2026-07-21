@@ -95,7 +95,9 @@
         color:rgb(160, 25, 55);
     }
 
-    .faq__clickable-header{
+    .faq__clickable-header,
+    .contact__btn-wrapper,
+    .contact__btn{
         cursor:pointer;
     }
 }
@@ -192,7 +194,8 @@
     .promotional-section__title,
     .testimonials-section__title,
     .wishlist__title,
-    .faq__title{
+    .faq__title,
+    .contact__title{
         font-size: 2.8rem;
     }
 
@@ -338,6 +341,18 @@
     .about__decision-img-wrapper,
     .about__founder-img-wrapper{
         aspect-ratio:4 / 3;
+    }
+
+    .contact__text{
+        font-size:1.1rem;
+    }
+
+    .contact__form-title{
+        font-size: 1.75rem;
+    }
+
+    .contact__form-title{ 
+        top:-21.5px;
     }
 }
 
@@ -639,6 +654,13 @@
     .lookbook__shop-link{
         font-size:.75rem;
     }
+
+    .contact__form-wrapper{
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+    }
+
 }
 
 @media(min-width:1024px){
@@ -670,7 +692,8 @@
     .promotional-section__title,
     .testimonials-section__title,
     .wishlist__title,
-    .faq__title{
+    .faq__title,
+    .contact__title{
         font-size: 4rem;
     }
 
